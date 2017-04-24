@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="fractal.test.diegoalves.beerlist.view.BeerDetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageViewBeerDetails"
+            android:layout_width="125dp"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/beer_image"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/icon" />
+
+        <TextView
+            android:id="@+id/textViewBeerDetailsName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/beer_name"
+            android:textColor="@color/black"
+            android:layout_marginStart="20dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageViewBeerDetails" />
+
+        <TextView
+            android:id="@+id/textViewBeerDetailsTagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textViewBeerDetailsName"
+            android:layout_below="@+id/textViewBeerDetailsName"
+            android:layout_marginTop="13dp"
+            android:text="@string/beer_tagline" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textViewBeerDetailsDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/description_beer" />
+
+    <Button
+        android:id="@+id/buttonAddFavorite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_to_favorites" />
+
+</LinearLayout>
